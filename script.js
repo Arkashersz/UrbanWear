@@ -1,3 +1,5 @@
+
+/* Efeito da galeria de fotos */
 const galleryImgs = document.querySelectorAll('.gallery-img');
 
     // Adicionar manipulador de eventos a cada imagem
@@ -16,3 +18,13 @@ const galleryImgs = document.querySelectorAll('.gallery-img');
         img.setAttribute('src', originalImg);
         });
     });
+
+/* Efeito Navbar Mobile */
+const bar = document.getElementById('bar');
+const nav = document.getElementById('navbar');
+
+if (bar) {
+  bar.addEventListener('click', () => {
+    nav.classList.add('active');
+  })
+}
